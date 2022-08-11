@@ -4,6 +4,8 @@ import com.khyojun.admin.springboot.web.dto.HelloResponseDto;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
 
+import java.util.Optional;
+
 public class HelloResponseDtoTest {
 
 
@@ -12,7 +14,7 @@ public class HelloResponseDtoTest {
     public void 롬복_기능_테스트(){
         //given
         String name = "test";
-        int amount = 1000;
+        Optional<Integer> amount=Optional.of(1000);
 
         //when
         HelloResponseDto dto = new HelloResponseDto(name, amount);
@@ -21,9 +23,5 @@ public class HelloResponseDtoTest {
 
         Assertions.assertThat(dto.getName()).isEqualTo(name);
         Assertions.assertThat(dto.getAmount()).isEqualTo(amount);
-
-
-
-
     }
 }
