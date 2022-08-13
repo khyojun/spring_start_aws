@@ -2,6 +2,7 @@ package com.khyojun.admin.springboot.service.posts;
 
 import com.khyojun.admin.springboot.domain.posts.PostRepository;
 import com.khyojun.admin.springboot.domain.posts.Posts;
+import com.khyojun.admin.springboot.web.dto.PostsSaveRequestDto;
 import com.khyojun.admin.springboot.web.dto.PostsResponseDto;
 import com.khyojun.admin.springboot.web.dto.PostsSaveRequestDto;
 import com.khyojun.admin.springboot.web.dto.PostsUpdateRequestDto;
