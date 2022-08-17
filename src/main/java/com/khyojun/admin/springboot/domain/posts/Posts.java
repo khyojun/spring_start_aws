@@ -1,6 +1,7 @@
 package com.khyojun.admin.springboot.domain.posts;
 
 
+import com.khyojun.admin.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,7 +11,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Getter
 @Entity
-public class Posts
+public class Posts extends BaseTimeEntity
 {
 
     @Id
